@@ -1,7 +1,9 @@
 import React , { useEffect, useState } from 'react'
 import firebaseDB from '../firebase'
 import {useNavigate, useParams} from 'react-router-dom';
-
+import Header from './Header';
+import"./update.css"
+import {Link} from 'react-router-dom'
 const initialState={
     name :'',
     email:'',
@@ -102,12 +104,17 @@ const handleInputChange1= (e) =>{
     },[id,data])
     console.log("dafy",state)
   return (
+    
     <div>
+      <Header></Header>
+      <div style={{marginTop:"50px"}}>
         <form>
-            <label >einkauf</label>
+       
 
+      <div className='seconde'>
+      <label >einkauf</label>
 
-
+  
             <select   className='KategorieSelect'   name='einkauf'  value={state.einkauf} onChange={handleInputChange1}>
    <option > Aldi</option>
     <option >Lebensmittel </option>
@@ -118,16 +125,16 @@ const handleInputChange1= (e) =>{
             <input className='BemerkungInput'  type="date" placeholder="entrer votre nom "
 value={state.datum} name='datum'
 onChange={handleInputChange1}/>
-
-<div>
-<label >lebensmittel </label>
+    </div>
+<div className='second'>
+<label className='lebensmittel' >lebensmittel </label>
             <input className='BemerkungInput'  type="number" placeholder="entrer votre nom "
 value={state.Lebensmittel} name='Lebensmittel'
 onChange={handleInputChange1} />
 <label >droguerie </label>
             <input className='BemerkungInput'  type="number" placeholder="entrer votre nom "
 value={state.droguerie} onChange={handleInputChange1} name='droguerie'/>
-<div>
+<div className='third'>
 <label >rest</label>
             <input className='BemerkungInput'  type="number" placeholder=''
  name='rest' value={state.rest}
@@ -135,23 +142,28 @@ onChange={handleInputChange1}/>
 
 
 
-</div>
+
 <label >bemerkung</label>
             <input className='BemerkungInput'  type="text" placeholder="no comment "
 value={state.bemerkung } 
 onChange={handleInputChange1} name='bemerkung'/>
-
+</div>
 <div>
 <div>
-<button onClick={edit}> edit </button>
-<button> Zurück</button>
+<button  className='btn btn-edit' onClick={edit}> edit </button>
+<Link to ='/Tabelle'>
+<button className='btn btn-edit'> Zurück</button>
+</Link>
 </div>
 </div>
 
 </div>
            
         </form>
-    {state.prix}
+        <div className='textende'>
+        dein total einkauf ist  ist  {state.prix}
+        </div>
+    </div>
     </div>
   )
 }

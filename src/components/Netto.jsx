@@ -7,7 +7,8 @@ import {toast} from 'react-toastify';
 import {ToastContainer} from 'react-toastify'
 import'react-toastify/dist/ReactToastify.css';
 
-const Aldi = () => {
+
+const Netto = () => {
     const handleSubmit = (e) =>{
         e.preventDefault()
 
@@ -78,7 +79,7 @@ const Aldi = () => {
          
 
             setstate02({
-              einkauf :'Aldi',
+              einkauf :'Netto',
               klamotten:'0',
               rest:'0',
               Lebensmittel:'0',
@@ -102,7 +103,7 @@ const Aldi = () => {
            
 
             setstate02({
-              einkauf :'Aldi',
+              einkauf :'Netto',
               klamotten:'0',
               rest:'0',
               Lebensmittel:'0',
@@ -167,16 +168,17 @@ const Aldi = () => {
                   
                           setIsActive4(current => !current);
                         }
-        
                         const { categori01 ,prix01,bemerkung,datum ,categori02,prix02,bemerkung02} = state01;                
+        
+                      
   return (
     <div>
-       <ToastContainer  position='top-center'/>
+        <ToastContainer  position='top-center'/>
         <div className='Grusse'>
 
         
 
-       ah  schon wieder bei Aldi
+       ah  schon wieder bei Netto 
        <div className='Frage'>
         wann warst du einkaufen Kerstin?
        </div>
@@ -268,10 +270,17 @@ const Aldi = () => {
         </div>
          </div>   
 
+      
 
-         
+
+
+
+
+
+
+
     </div>
   )
 }
 
-export default Aldi
+export default Netto

@@ -1,0 +1,27 @@
+.seconde{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.second{
+    text-align: center;
+    margin-bottom: 25px;
+    margin-left: 0px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.BemerkungInput{
+    font-size: 10px;
+}
+#label{
+    font-size: 12px;
+}
+.lebensmittel{
+    margin-left: 0px;
+}
+.third{
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+.textende{
+    text-align: center;
+}

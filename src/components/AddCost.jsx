@@ -2,6 +2,9 @@ import React , { useState,useEffect }from 'react'
 import Header from './Header'
 import "./AddCost.css"
 import Aldi from './Aldi'
+import Netto from './Netto'
+
+
 
 const initialState={
      
@@ -104,8 +107,9 @@ const karim ="hamza";
     </div>
     <div>
       {status01 ==="Aldi" && <Aldi/>}
-      {status01 ==="Kaufland" && <div>  schon wieder  bei kAUFLAN </div>}
-   
+      {status01 ==="Netto" && <Netto/>}
+      
+     
       </div>
 </div>
   
