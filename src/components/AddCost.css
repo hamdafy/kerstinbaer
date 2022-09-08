@@ -1,0 +1,16 @@
+.liste00{
+    display: flex;
+}
+.frageSelect{
+    text-align: center;
+    margin: 12px;
+}
+.HauptSelect{
+
+margin:10px ;
+width: 25%;
+padding: 10px;
+}
+
+  /* Hide the items when the select box is closed: */
+

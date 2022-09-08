@@ -1,0 +1,21 @@
+.card{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    align-content: center;
+    margin: 0 auto;
+}
+.card-header{
+    height: 30%;
+    background-color: #a79267;
+    color: white;
+    text-align: center;
+}
+.card-header p{
+    font-size: 20px;
+}
+.conatiner0{
+    padding: 4px 16px;
+    text-align: center;
+}

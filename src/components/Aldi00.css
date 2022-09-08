@@ -1,0 +1,90 @@
+.Grusse{
+  text-align: center;
+}
+
+@media (min-width: 820px) {
+  .KategorieLabel{
+    margin: 10px;
+   
+  }
+  .KategorieSelect{
+    margin: 10px;
+    padding: 10px;
+  }
+  .PrixLabel{
+    margin: 10px;
+  }
+  .PrixInput{
+    margin: 10px;
+    padding: 10px;
+  }
+  .BemerkungLabel{
+    margin: 10px;
+  }
+  .BemerkungInput{
+    margin: 10px;
+    padding: 10px;
+    
+  }
+  .TotalePreise{
+   margin: 15px;
+  }
+  .Frage{
+    margin-top: 20px;
+  }
+  .enterDate{
+    margin: 10px;
+width: 25%;
+padding: 10px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .KategorieLabel{
+   margin: 3px 0px 2px -20p;
+   font-size: 15px;
+   
+  }
+  .erste{
+    display: flex;
+  }
+  .KategorieSelect{
+    margin: 3px;
+    padding: 5px;
+  }
+  .PrixLabel{
+    margin: 3px;
+    font-size: 15px;
+  }
+  .PrixInput{
+    margin: 3px;
+    padding: 5px;
+    font-size: 10px;
+  }
+  .BemerkungLabel{
+    margin: 3px;
+  }
+  .BemerkungInput{
+    margin: 3px;
+    padding: 5px;
+  }
+  .enterDate{
+    width: 150px;
+height: 25px;
+  }
+}
+
+ 
+.btn {
+  border: none;
+  color: #1d3817;
+  padding: 5px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 4px 2px;
+  cursor: pointer;
+}
